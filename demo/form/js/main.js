@@ -1,4 +1,19 @@
 (function(){
+	var n = gtg("#wrap");
+	console.log(n);
+	var header = gtg(".dssheader");
+	
+	header.css({padding: "20px", border: "2px solid black"})
+
+	var color = header.getStyle("backgroundColor");
+	
+	console.log(color);
+	
+	header.hide();
+	
+	setTimeout(function(){
+		header.show();
+	}, 3000);
 
 	/*
 var formFields = document.querySelectorAll("#myform input");
